@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <!-- Logo -->
         <div class="logo-icon"></div>
 
@@ -19,20 +19,93 @@
             <a href="#section-message-us">Message Us</a>
         </nav>
     </header>
+
+    <hr/>
+
     <main>
         <!-- Home -->
-        <section id="section-home"></section>
+        <section id="section-home">
+            <header>
+                <h1>Hi User, Welcome to My Website</h1>
+            </header>
+
+            <article>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                
+                <!-- Photo Banner -->
+                 <div class="photo-banner"></div>
+            </article>
+        </section>
+
+        <hr/>
 
         <!-- Our Profile -->
-        <section id="section-our-profile"></section>
+        <section id="section-our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <div class="profile-icon-container">
+                <div>
+                    <div class="profile-icon"></div>
+                    <h4>profile 1</h4>
+                </div>
+    
+                <di>
+                    <div class="profile-icon"></div>
+                    <h4>profile 2</h4>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
 
         <!-- Portofolio -->
-        <section id="section-portofolio"></section>
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+        </section>
+
+        <hr/>
 
         <!-- Message Us -->
-        <section id="section-message-us"></section>
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <section class="form-container">
+                <!-- Form -->
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" required><br>
+
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male" required> Male
+                    <input type="radio" id="female" name="gender" value="Female" required> Female<br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" required></textarea><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+                 <!-- result form -->
+                <div id="result"></div>
+            </section>
+        </section>
+
+        <hr/>
 
     </main>
-    <footer></footer>
+    <footer>
+        <p>Made by Rashad@2024</p>
+    </footer>
+    <script src="js\script.js"></script>
+
 </body>
 </html>
