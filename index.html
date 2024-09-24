@@ -14,7 +14,7 @@
         <!-- Navigator -->
         <nav>
             <a href="#section-home">Home</a>
-            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-my-profile">My Profile</a>
             <a href="#section-portofolio">Portofolio</a>
             <a href="#section-message-us">Message Us</a>
         </nav>
@@ -26,36 +26,55 @@
         <!-- Home -->
         <section id="section-home">
             <header>
-                <h1>Hi <span id="User-name">...</span>, Welcome to My Website</h1>
+                <h1>Hi <span id="User-name">Guest</span>, Welcome to My Website</h1>
             </header>
 
             <article>
                 <div class="article-text">
-                    <p>Selamat datang di dunia saya! Di sini, saya berbagi karya, ide-ide kreatif, dan pengalaman seru yang mungkin bisa menginspirasi. Yuk, eksplor lebih dalam dan temukan sesuatu yang menarik di setiap sudut halaman ini!</p>
+                    <p>Selamat datang di website saya! Di sini, saya berbagi karya,
+                        ide-ide kreatif, dan pengalaman seru yang mungkin bisa menginspirasi. 
+                        Yuk, eksplor lebih dalam dan temukan sesuatu yang menarik di setiap sudut halaman ini!
+                    </p>
+                    <p>Silakan masukkan nama Anda agar kami bisa menyapa dengan lebih personal:</p>
+                    <button onclick="askUserName()">Masukkan Name</button>
                 </div>
                 
                 <!-- Photo Banner -->
-                 <div class="photo-banner"></div>
+                <div class="slideshow-container">
+                    <!-- Slides -->
+                    <img class="img-slideshow" src="./assets/Banner.jpg" alt="Image 1">
+                    <img class="img-slideshow" src="./assets/banner2.jpg" alt="Image 2">
+                    <img class="img-slideshow" src="./assets/banner3.jpg" alt="Image 3">
+        
+                    <!-- Next and Previous Buttons -->
+                    <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+                    <a class="next" onclick="plusDivs(1)">&#10095;</a>
+                </div>
             </article>
         </section>
 
         <hr/>
 
         <!-- Our Profile -->
-        <section id="section-our-profile">
+        <section id="section-my-profile">
             <header>
-                <h1>Our Profile</h1>
+                <h1>My Profile</h1>
             </header>
 
             <div class="profile-icon-container">
                 <div>
                     <div class="profile-icon"></div>
-                    <h4>profile 1</h4>
+                    <h4>Rashad Muhammad Fajar</h4>
                 </div>
     
-                <di>
-                    <div class="profile-icon"></div>
-                    <h4>profile 2</h4>
+                <div>
+                    <div class="profile-article">
+                    <p>Saya adalah lulusan Meteorologi Terapan dengan pengalaman dalam analisis data cuaca dan iklim menggunakan berbagai alat dan bahasa pemrograman. 
+                        Saya memiliki keahlian dalam menggunakan Microsoft Office untuk mengelola data dan menyusun laporan, Python untuk analisis data serta otomasi, 
+                        dan R Studio untuk pengolahan data statistik. Saya juga ahli dalam membuat visualisasi data menggunakan ArcGIS, 
+                        serta memiliki kemampuan dasar dalam pengembangan web dengan HTML dan CSS. Dengan keahlian ini, 
+                        saya dapat menyajikan hasil analisis dalam bentuk grafik dan peta yang interaktif dan informatif, sehingga mudah dipahami oleh berbagai kalangan.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -66,6 +85,10 @@
         <section id="section-portofolio">
             <header>
                 <h1>Portofolio</h1>
+
+                <p> Nama saya Rashad Muhammad Fajar </p>
+                <p> </p>
+
             </header>
         </section>
 
@@ -118,39 +141,7 @@
                 </div>
             </div>
         </section>
-        
-            
-
-            <!-- <form name="message-form" onsubmit="return validateform()">
-                Nama: 
-                <input placeholder="Nama" type="text" name="full-name"/>
-                <br/>
-
-                Tanggal lahir:
-                <input type="date" name="birth-date"/>
-                <br/>
-
-                Jenis Kelamin:
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="male">Laki-laki</label>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="female">Perempuan</label>
-                <br/>
-
-                Pesan:
-                <textarea placeholder="Pesan" name="messages"></textarea>
-                <br/>
-
-                <input type="submit" value="submit"/>
-            </form>
-            <div>
-                <p>Nama: <span id="sender-full-name"></span></p>
-                <p>Tanggal lahir: <span id="sender-birth-date"></span></p>
-                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-                <p>Pesan: <span id="sender-messages"></span></p> 
-            </div>
-        </section> -->
-
+    
         <hr/>
 
     </main>
