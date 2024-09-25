@@ -51,6 +51,13 @@ nav > a:hover {
 }
 
 
+h1 {
+    font-size: 24px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
 /*-------------------- Home ----------------------*/
 #section-home {
     padding: 70px 30px 10px;
@@ -119,10 +126,6 @@ nav > a:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-
-
-
-
 /*---------------------- Profile -------------------- */
 #section-my-profile {
     padding: 10px 30px;
@@ -161,11 +164,36 @@ nav > a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-/*---------------------- portofolio ------------------------*/
-#section-portofolio{
+/*---------------------- my skill ------------------------*/
+#section-my-skill{
     padding: 10px 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skill-item {
+    text-align: center;
+    width: 120px;
+}
+
+.skill-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.skill-item:hover img {
+    transform: scale(1.2);
+}
+
+.skill-item p {
+    margin-top: 10px;
+    color: #333;
 }
 
 
@@ -195,13 +223,6 @@ form {
     text-align: left;
     margin-bottom: 20px;
 }
-
-h1 {
-    font-size: 24px;
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
-}
-
 
 .form-group {
     display: flex;
@@ -288,13 +309,8 @@ footer {
         flex-direction: column;
     }
 
-    h1 {
-        text-align: center;
-    }
-
     .form-container{
         flex-direction: column;
-        /* align-items: center; */
     }
 
     form, .message-output {

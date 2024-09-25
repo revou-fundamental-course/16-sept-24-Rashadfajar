@@ -1,11 +1,9 @@
 // ini js
 
 function askUserName() {
-    // Memunculkan jendela prompt untuk meminta nama pengguna
     let userName = window.prompt("Masukkan Nama Anda:", "");
     if (userName != null && userName.trim() !== "") {
-        // Jika pengguna memasukkan nama, tampilkan di elemen dengan ID 'User-name'
-        document.getElementById("User-name").innerText = userName;
+        document.getElementById("User-name").innerHTML = userName;
     }
 }
 
@@ -13,12 +11,10 @@ function askUserName() {
 var slideIndex = 1;
 showDivs(slideIndex);
 
-// Function to control manual slide navigation
 function plusDivs(n) {
     showDivs(slideIndex += n);
 }
 
-// Function to display the appropriate slide
 function showDivs(n) {
     var i;
     var slides = document.getElementsByClassName("img-slideshow");
@@ -31,30 +27,25 @@ function showDivs(n) {
         slideIndex = slides.length;
     }
 
-    // Hide all slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    // Display the current slide
     slides[slideIndex - 1].style.display = "block";
 }
 
-// Auto slide every 3 seconds
 setInterval(function() {
     plusDivs(1);
-}, 5000); // 3000 milliseconds = 3 seconds
+}, 5000);
 
 
 
 function validateform() {
-    // Ambil nilai input dari form
     var fullName = document.forms["message-form"]["full-name"].value;
     var birthDate = document.forms["message-form"]["birth-date"].value;
     var gender = document.forms["message-form"]["gender"].value;
     var messages = document.forms["message-form"]["messages"].value;
 
-    // Validasi Nama
     if (fullName == "") {
         alert("Nama harus diisi");
         return false;

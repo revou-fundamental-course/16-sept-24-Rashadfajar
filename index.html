@@ -15,7 +15,7 @@
         <nav>
             <a href="#section-home">Home</a>
             <a href="#section-my-profile">My Profile</a>
-            <a href="#section-portofolio">Portofolio</a>
+            <a href="#section-my-skill">My Skill</a>
             <a href="#section-message-us">Message Us</a>
         </nav>
     </header>
@@ -81,16 +81,41 @@
 
         <hr/>
 
-        <!-- Portofolio -->
-        <section id="section-portofolio">
+        <!-- My Skill Section -->
+        <section id="section-my-skill">
             <header>
-                <h1>Portofolio</h1>
-
-                <p> Nama saya Rashad Muhammad Fajar </p>
-                <p> </p>
-
+                <h1>My Skill</h1>
             </header>
+
+            <div class="skills-container">
+                <!-- Skill Item -->
+                <div class="skill-item">
+                    <img src="../assets//HTML.png" alt="HTML" />
+                    <p>HTML</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="./assets/CSS.png" alt="CSS" />
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="./assets/JS.png" alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="./assets/python.png" alt="Python" />
+                    <p>Python</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="./assets/R.png" alt="R Studio" />
+                    <p>R Studio</p>
+                </div>
+            </div>
         </section>
+
 
         <hr/>
 
@@ -105,25 +130,25 @@
                 <form name="message-form" onsubmit="return validateform()">
                     <div class="form-group">
                         <label for="full-name">Nama :</label>
-                        <input id="full-name" placeholder="Nama" type="text" name="full-name" required/>
+                        <input id="full-name" placeholder="Nama" type="text" name="full-name"/>
                     </div>
         
                     <div class="form-group">
                         <label for="birth-date">Tanggal Lahir :</label>
-                        <input id="birth-date" type="date" name="birth-date" required/>
+                        <input id="birth-date" type="date" name="birth-date"/>
                     </div>
         
                     <div class="form-group">
                         <label>Jenis Kelamin :</label>
-                        <input type="radio" name="gender" id="male" value="male" required>
+                        <input type="radio" name="gender" id="male" value="male">
                         <label for="male">Laki-laki</label>
-                        <input type="radio" name="gender" id="female" value="female" required>
+                        <input type="radio" name="gender" id="female" value="female">
                         <label for="female">Perempuan</label>
                     </div>
         
                     <div class="form-group">
                         <label for="messages">Pesan :</label>
-                        <textarea id="messages" placeholder="Pesan" name="messages" required></textarea>
+                        <textarea id="messages" placeholder="Pesan" name="messages"></textarea>
                     </div>
         
                     <div class="form-group">
